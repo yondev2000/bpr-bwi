@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Detail Karyawan</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <style>
+      .custom-btn {
+        border: none; /* Remove the button border */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container border">
+      <div class="row py-5">
+        <!-- SIDE BAR -->
+        <div class="col-3">
+          <div class="container py-5 px-4">
+            <!-- ACCOUNT -->
+            <div class="row container mb-2">
+              <div class="col-auto">
+                <a
+                  href="#"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#accountCollapse"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="50"
+                    height="50"
+                    fill="currentColor"
+                    class="bi bi-person-circle"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                    <path
+                      fill-rule="evenodd"
+                      d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="col-auto">
+                <div><strong> John Stones </strong></div>
+                <div>Direktur Utama</div>
+              </div>
+            </div>
+            <div class="collapse" id="accountCollapse">
+              <div class="container">
+                <a href="#" class="text-danger">Log Out</a>
+              </div>
+            </div>
+            <!-- /ACCOUNT -->
+
+              <!-- SIDEBAR MENU -->
+              <div class="accordion mt-5" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseTwo"
+                    >
+                      <strong> Penilaian </strong>
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseTwo"
+                    class="accordion-collapse collapse"
+                  >
+                    <div class="accordion-body">
+                      <div class="d-grid gap-2">
+                        <div class="row gap-1 px-3">
+                          <a href="data_penilaian.html">
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary custom-btn"
+                            >
+                              Data Penilaian
+                            </button>
+                          </a>
+                          <a href="form_penilaian.html">
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary custom-btn"
+                            >
+                              Form Penilaian
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseThree"
+                    >
+                      <strong> Karyawan </strong>
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseThree"
+                    class="accordion-collapse collapse"
+                  >
+                    <div class="accordion-body">
+                      <div class="d-grid gap-2">
+                        <div class="row gap-1 px-3">
+                          <a href="data_karyawan.html">
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary custom-btn"
+                            >
+                              Data Karyawan
+                            </button></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /SIDEBAR MENU -->
+          </div>
+        </div>
+        <!-- /SIDE BAR -->
+
+        <!-- CONTENT -->
+        <div class="col-9">
+
+          <!-- A. PENCAPAIAN SASARAN -->
+          <div class="container py-3 px-5">
+            <!-- NAMA -->
+            <div class="row mb-2">       
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <h3 class="">Colins Edward</h3>
+                </div>
+              </div>
+            </div>
+            <!-- /NAMA -->
+
+            <!-- DETAIL KARYAWAN -->
+            <div class="row mb-4">
+
+              <div class="col-auto">
+                <div class="row">
+                  <div class="col-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+                      <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
+                      <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+                    </svg>
+                  </div>
+                  <div class="col-auto">Staff Legal</div>
+                </div>
+              </div>
+
+              <div class="col-auto">
+                <div class="row">
+                  <div class="col-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmarks-fill" viewBox="0 0 16 16">
+                      <path d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L7 13.101l-4.223 2.815A.5.5 0 0 1 2 15.5V4z"/>
+                      <path d="M4.268 1A2 2 0 0 1 6 0h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L13 13.768V2a1 1 0 0 0-1-1H4.268z"/>
+                    </svg>
+                  </div>
+                  <div class="col-auto">Divisi Funding</div>
+                </div>
+              </div>
+
+              <div class="col-auto">
+                <div class="row">
+                  <div class="col-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building-fill" viewBox="0 0 16 16">
+                      <path d="M3 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h3v-3.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V16h3a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H3Zm1 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5ZM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM7.5 5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM4.5 8h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5Z"/>
+                    </svg>
+                  </div>
+                  <div class="col-auto">Kantor Pusat</div>
+                </div>
+              </div>
+              
+            </div>
+            <!-- /DETAIL KARYAWAN -->
+
+            <hr class="mb-5">
+            <h3 class="mb-2">Form KPI Divisi Funding</h3>
+            <div class="row mb-4">
+              <div class="col-auto">
+                <div class="row">
+                  <div class="col-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                      <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                      <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                    </svg>
+                  </div>
+                  <div class="col-auto">Periode Desember 2022</div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne-a" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne"><strong> A. PENCAPAIAN SASARAN </strong></button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne-a" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                  <div class="accordion-body">
+                    <div class="py-3 px-5">
+
+                      <div class="row mb-4">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <h5 class="">Bobot <span class="badge text-bg-info">55</span></h5> 
+                          </div>
+                          <div class="col-auto ms-auto">
+                            <div class="row g-2">
+                              <!-- BTN PETUNJUK -->
+                              <div class="col-auto">
+                                <button type="submit" class="btn btn-secondary btn-sm mb-3" data-bs-toggle="modal" data-bs-target="#pencapaianSasaranModal">
+                                  <strong>
+                                    <em>i</em>
+                                  </strong> | Petunjuk
+                                </button>
+                              </div>
+                              <!-- /BTN PETUNJUK -->
+
+                              <!-- MODAL -->
+                              <div class="modal fade" id="pencapaianSasaranModal" tabindex="-1" aria-labelledby="pencapaianSasaranModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-centered">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="py-3 px-5">
+                                        <h5>Petunjuk:</h5>
+                                          <ul class="list-group mb-5">
+                                            <li class="list-group-item">Ukurlah sasaran yang dicapai oleh karyawan dengan menggunakan ukuran hasil kerja</li>
+                                            <li class="list-group-item">Nilailah sasaran yang dicapai oleh karyawan dengan menggunakan ukuran nilai dibawah ini :</li>
+                                          </ul>
+
+                                          <h5>Nilai:</h5>
+                                          <ol class="list-group mb-5">
+                                            <li class="list-group-item">
+                                              <span class="badge bg-primary">5</span>
+                                              <label class="form-check-label px-3" for="firstCheckbox">(diatas 105%) Jauh melebihi sasaran</label>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <span class="badge bg-primary">4</span>
+                                              <label class="form-check-label px-3" for="firstCheckbox">(101-104,9%) Melebihi sasaran</label>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <span class="badge bg-primary">3</span>
+                                              <label class="form-check-label px-3" for="firstCheckbox">(98%-100%) Memenuhi sasaran</label>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <span class="badge bg-primary">2</span>
+                                              <label class="form-check-label px-3" for="firstCheckbox">(95%-97%) Hampir memenuhi sasaran</label>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <span class="badge bg-primary">1</span>
+                                              <label class="form-check-label px-3" for="firstCheckbox">(dibawah 95 % ) Sangat tidak memenuhi sasaran</label>
+                                            </li>
+                                          </ol>
+
+                                          <h5>Perhitungan Nilai:</h5>
+                                          <div class="card mb-5">
+                                            <div class="card-body">
+                                              <strong> NILAI SASARAN = (</strong> Total Nilai <strong>/</strong> Nilai Maksimum <strong> ) * </strong>  Bobot
+                                            </div>
+                                          </div>
+                                      </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- /MODAL -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <h5> <span class="text-danger"> <strong> Isi </strong></span> Kriteria Penilaian:</h5>
+                      <div class="card mb-5">
+                        <div class="card-body">
+                          <div class="row mb-2">
+                            <label for="" class="col-sm-10 col-form-label">Saldo Tabungan Umum</label>
+                            <div class="col-sm-2">
+                              <input type="number" class="form-control" id="">
+                            </div>
+                          </div>
+                          <div class="row mb-2">
+                            <label for="" class="col-sm-10 col-form-label">Saldo Deposito</label>
+                            <div class="col-sm-2">
+                              <input type="number" class="form-control" id="">
+                            </div>
+                          </div>
+                          <div class="row mb-2">
+                            <label for="" class="col-sm-10 col-form-label">Pertumbuhan</label>
+                            <div class="col-sm-2">
+                              <input type="number" class="form-control" id="">
+                            </div>
+                          </div>
+                          <div class="row mb-2">
+                            <label for="" class="col-sm-10 col-form-label">Jumlah Nasabah Baru</label>
+                            <div class="col-sm-2">
+                              <input type="number" class="form-control" id="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <h3>Nilai Sasaran: <span class="badge bg-secondary">0</span></h3>
+
+                    </div>
+                </div>
+              </div>
+            </div>
+            
+            </div>
+          </div>
+          <!--/ A. PENCAPAIAN SASARAN -->
+          
+          <!-- B. TARGET BUDAYA KERJA -->
+          <div class="container py-3 px-5 mb-2">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne-b" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne"><strong> B. PENGAMALAN TARGET BUDAYA KERJA </strong></button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne-b" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                  <div class="accordion-body">
+                    <div class="py-3 px-5">
+
+                      <div class="row mb-4">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <h5 class="">Bobot <span class="badge text-bg-info">45</span></h5>
+                          </div>
+                          <div class="col-auto ms-auto">
+                            <div class="row g-2">
+                              <!-- BTN PETUNJUK -->
+                              <div class="col-auto">
+                                <button type="submit" class="btn btn-secondary btn-sm mb-3" data-bs-toggle="modal" data-bs-target="#targetBudayaKerjaModal">
+                                  <strong>
+                                    <em>i</em>
+                                  </strong> | Petunjuk
+                                </button>
+                              </div>
+                              <!-- /BTN PETUNJUK -->
+
+                              <!-- MODAL -->
+                              <div class="modal fade" id="targetBudayaKerjaModal" tabindex="-1" aria-labelledby="targetBudayaKerjaModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-centered">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="py-3 px-5">
+                                        <h5>Petunjuk:</h5>
+                                        <ul class="list-group mb-5">
+                                          <li class="list-group-item">Ukurlah pengamalan target budaya kerja dengan kriteria frekuensi karyawan dalam melakukan faktor yang menunjukan kemampuan dan tingkah laku dalam bekerja.</li>
+                                          <li class="list-group-item">Nilailah pengamalan target budaya kerja karyawan dengan menggunakan ukuran dibawah ini.</li>
+                                        </ul>
+
+                                        <h5>Nilai:</h5>
+                                        <ol class="list-group mb-5">
+                                          <li class="list-group-item">
+                                            <span class="badge bg-primary">5</span>
+                                            <label class="form-check-label px-3" for="firstCheckbox">Jauh melebihi sasaran</label>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <span class="badge bg-primary">4</span>
+                                            <label class="form-check-label px-3" for="firstCheckbox">Melebihi sasaran</label>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <span class="badge bg-primary">3</span>
+                                            <label class="form-check-label px-3" for="firstCheckbox">Memenuhi sasaran</label>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <span class="badge bg-primary">2</span>
+                                            <label class="form-check-label px-3" for="firstCheckbox">Hampir memenuhi sasaran</label>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <span class="badge bg-primary">1</span>
+                                            <label class="form-check-label px-3" for="firstCheckbox">Sangat tidak memenuhi sasaran</label>
+                                          </li>
+                                        </ol>
+
+                                        <h5>Perhitungan Nilai:</h5>
+                                        <div class="card mb-5">
+                                          <div class="card-body">
+                                            <strong> NILAI = (</strong> Total Nilai <strong>/</strong> Nilai Maksimum <strong> ) * </strong>  Bobot
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- /MODAL -->
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+
+                      <h5> <span class="text-danger"> <strong> Isi </strong></span> Kriteria Penilaian:</h5>
+                      <div class="card mb-5">
+                        <div class="card-body">
+                          <div class="row mb-2">
+                            <label for="" class="col-sm-10 col-form-label">Disiplin dan Absensi</label>
+                            <div class="col-sm-2">
+                              <input type="number" class="form-control" id="">
+                            </div>
+                          </div>
+                          <div class="row mb-2">
+                            <label for="" class="col-sm-10 col-form-label">Sikap Tanggung jawab dalam pekerjaan</label>
+                            <div class="col-sm-2">
+                              <input type="number" class="form-control" id="">
+                            </div>
+                          </div>
+                          <div class="row mb-2">
+                            <label for="" class="col-sm-10 col-form-label">Konsep kerja  marketing dan Upaya pencapaian Target</label>
+                            <div class="col-sm-2">
+                              <input type="number" class="form-control" id="">
+                            </div>
+                          </div>
+                          <div class="row mb-2">
+                            <label for="" class="col-sm-10 col-form-label">Relationship Internal dan External</label>
+                            <div class="col-sm-2">
+                              <input type="number" class="form-control" id="">
+                            </div>
+                          </div>
+                          <div class="row mb-2">
+                            <label for="" class="col-sm-10 col-form-label">Kemampuan dalam pemecahan masalah</label>
+                            <div class="col-sm-2">
+                              <input type="number" class="form-control" id="">
+                            </div>
+                          </div>
+                          <div class="row mb-2">
+                            <label for="" class="col-sm-10 col-form-label">Penampilan dan Kebersihan lingkungan kerja</label>
+                            <div class="col-sm-2">
+                              <input type="number" class="form-control" id="">
+                            </div>
+                          </div>
+                          <div class="row mb-2">
+                            <label for="" class="col-sm-10 col-form-label">Kemampuan untuk menyakinkan</label>
+                            <div class="col-sm-2">
+                              <input type="number" class="form-control" id="">
+                            </div>
+                          </div>
+                          <div class="row mb-2">
+                            <label for="" class="col-sm-10 col-form-label">Rasa kebersamaan dan pengabdian kepada perusahaan</label>
+                            <div class="col-sm-2">
+                              <input type="number" class="form-control" id="">
+                            </div>
+                          </div>
+                          <div class="row mb-2">
+                            <label for="" class="col-sm-10 col-form-label">Pelaksanaan Value ( Budaya Kerja )</label>
+                            <div class="col-sm-2">
+                              <input type="number" class="form-control" id="">
+                            </div>
+                          </div>
+                          <div class="row mb-2">
+                            <label for="" class="col-sm-10 col-form-label">Kemampuan mengelola account</label>
+                            <div class="col-sm-2">
+                              <input type="number" class="form-control" id="">
+                            </div>
+                          </div>
+                          <div class="row mb-2">
+                            <label for="" class="col-sm-10 col-form-label">Kepatuhan terhadap pelaksanaan SOP</label>
+                            <div class="col-sm-2">
+                              <input type="number" class="form-control" id="">
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                      <h3>Nilai Pengamalan Target Budaya Kerja: <span class="badge bg-secondary">0</span></h3>
+                    </div>
+                </div>
+              </div>
+            </div>
+            
+            </div>
+          </div>
+          <!-- /TARGET BUDAYA KERJA -->
+
+          <!-- NILAI PRESTASI KERJA -->
+          <div class="container px-5">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-lightning" viewBox="0 0 16 16">
+                      <path d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5zM6.374 1 4.168 8.5H7.5a.5.5 0 0 1 .478.647L6.78 13.04 11.478 7H8a.5.5 0 0 1-.474-.658L9.306 1H6.374z"/>
+                    </svg>
+                  </div>
+                  <div class="col-auto py-3"><h5 class="display-6">Total Nilai Prestasi Kerja: <span class="badge bg-success">0</span></h5></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/ NILAI PRESTASI KERJA -->
+
+          <!-- -----------------------PENILAIAN POTENSI----------------------- -->
+
+          <!-- TARGET BUDAYA -->
+          <div class="container py-3 px-5 mb-2">
+
+            <hr class="mb-5 mt-5">
+            <h3 class="mb-2">Form Penilaian Potensi</h3>
+            <div class="row mb-4">
+              <div class="col-auto">
+                <div class="row">
+                  <div class="col-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                      <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                      <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                    </svg>
+                  </div>
+                  <div class="col-auto">Periode Desember 2022</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne-c" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne"><strong>A. PENGAMALAN TARGET BUDAYA KERJA </strong></button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne-c" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                  <div class="accordion-body">
+
+                    <div class="py-3 px-5">
+
+                      <div class="row mb-4">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <h5 class="">Bobot <span class="badge text-bg-info">45</span></h5>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <h5>Keterangan:</h5>
+                      <ul class="list-group mb-4">
+                        <li class="list-group-item">Nilai berikut diambil otomatis dari penilaian Pengamalan Target Budaya Kerja pada penilaian KPI Divisi Funding.</li>
+                      </ul>
+
+                      <h3>Nilai Pengamalan Target Budaya Kerja: <span class="badge bg-secondary">0</span></h3>
+                    </div>
+                    
+                </div>
+              </div>
+            </div>
+            
+            </div>
+          </div>
+          <!-- /TARGET BUDAYA -->
+
+          <!-- TARGET BUDAYA -->
+          <div class="container py-3 px-5 mb-2">
+
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne-c" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne"><strong> B. KARAKTERISTIK POTENSI </strong></button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne-c" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                  <div class="accordion-body">
+                    <div class="py-3 px-5">
+
+                      <div class="row mb-4">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <h5 class="">Bobot <span class="badge text-bg-info">55</span></h5>
+                          </div>
+                          <div class="col-auto ms-auto">
+                            <div class="row g-2">
+                              <!-- BTN PETUNJUK -->
+                              <div class="col-auto">
+                                <button type="submit" class="btn btn-secondary btn-sm mb-3" data-bs-toggle="modal" data-bs-target="#karakteristikPotensiModal">
+                                  <strong>
+                                    <em>i</em>
+                                  </strong> | Petunjuk
+                                </button>
+                              </div>
+                              <!-- /BTN PETUNJUK -->
+
+                              <!-- MODAL -->
+                              <div class="modal fade" id="karakteristikPotensiModal" tabindex="-1" aria-labelledby="karakteristikPotensiModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-centered">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="py-3 px-5">
+                                        <h5>Petunjuk:</h5>
+                                        <ul class="list-group mb-5">
+                                          <li class="list-group-item">Nilai karakteristik potensi karyawan diukur dari karakter yang dimiliki, kemampuan berorganisasi serta kemampuan belajar yang diperlukan untuk menetapkan pengembangan karier karyawan yang bersangkutan.</li>
+                                          <li class="list-group-item">Gunakan ukuran nilai di bawah ini</li>
+                                        </ul>
+                  
+                                        <h5>Nilai:</h5>
+                                        <ol class="list-group mb-5">
+                                          <li class="list-group-item">
+                                            <span class="badge bg-primary">5</span>
+                                            <label class="form-check-label px-3" for="firstCheckbox">Jauh di atas rata-rata</label>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <span class="badge bg-primary">4</span>
+                                            <label class="form-check-label px-3" for="firstCheckbox">Di atas rata-rata</label>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <span class="badge bg-primary">3</span>
+                                            <label class="form-check-label px-3" for="firstCheckbox">Rata-rata</label>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <span class="badge bg-primary">2</span>
+                                            <label class="form-check-label px-3" for="firstCheckbox">Di bawah rata-rata</label>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <span class="badge bg-primary">1</span>
+                                            <label class="form-check-label px-3" for="firstCheckbox">Jauh di bawah rata-rata</label>
+                                          </li>
+                                        </ol>
+                                        
+                                        <h5>Perhitungan Nilai:</h5>
+                                        <div class="card">
+                                          <div class="card-body">
+                                            <strong> NILAI = (</strong> Total Nilai <strong>/</strong> Nilai Maksimum <strong> ) * </strong>  Bobot
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- /MODAL -->
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+
+                      <h5> <span class="text-danger"> <strong> Isi </strong></span> Kriteria Penilaian:</h5>
+                      <div class="card mb-5">
+                        <div class="card-body">
+                          <div class="row mb-2">
+                            <label for="" class="col-sm-10 col-form-label">Kepercayaan Diri</label>
+                            <div class="col-sm-2">
+                              <input type="number" class="form-control" id="">
+                            </div>
+                          </div>
+                          <div class="row mb-2">
+                            <label for="" class="col-sm-10 col-form-label">Keberanian Mengambil Keputusan</label>
+                            <div class="col-sm-2">
+                              <input type="number" class="form-control" id="">
+                            </div>
+                          </div>
+                          <div class="row mb-2">
+                            <label for="" class="col-sm-10 col-form-label">Kemampuan Menjadi Teladan</label>
+                            <div class="col-sm-2">
+                              <input type="number" class="form-control" id="">
+                            </div>
+                          </div>
+                          <div class="row mb-2">
+                            <label for="" class="col-sm-10 col-form-label">Kemampuan Mengendalikan Diri</label>
+                            <div class="col-sm-2">
+                              <input type="number" class="form-control" id="">
+                            </div>
+                          </div>
+                          <div class="row mb-2">
+                            <label for="" class="col-sm-10 col-form-label">Kemampuan Berorganisasi</label>
+                            <div class="col-sm-2">
+                              <input type="number" class="form-control" id="">
+                            </div>
+                          </div>
+                          <div class="row mb-2">
+                            <label for="" class="col-sm-10 col-form-label">Kemampuan Beradaptasi</label>
+                            <div class="col-sm-2">
+                              <input type="number" class="form-control" id="">
+                            </div>
+                          </div>
+                          <div class="row mb-2">
+                            <label for="" class="col-sm-10 col-form-label">Kemampuan dan Kemauan meningkatkan ketrampilan/keahlian dalam menyelesaikan pekerjaan</label>
+                            <div class="col-sm-2">
+                              <input type="number" class="form-control" id="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <h3>Nilai Pengamalan Target Budaya Kerja: <span class="badge bg-secondary">0</span></h3>
+                    </div>
+                </div>
+              </div>
+            </div>
+            
+            </div>
+          </div>
+          <!-- /TARGET BUDAYA -->
+
+          <!-- NILAI POTENSI -->
+          <div class="container px-5">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-lightning" viewBox="0 0 16 16">
+                      <path d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5zM6.374 1 4.168 8.5H7.5a.5.5 0 0 1 .478.647L6.78 13.04 11.478 7H8a.5.5 0 0 1-.474-.658L9.306 1H6.374z"/>
+                    </svg>
+                  </div>
+                  <div class="col-auto py-3"><h5 class="display-6">Total Nilai Potensi: <span class="badge bg-success">0</span></h5></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/NILAI POTENSI -->
+
+        <!-- /CONTENT -->
+        </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <!-- TOOLTIP -->
+    <script>
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+  </body>
+</html>
